@@ -1,0 +1,322 @@
+/* Reset Style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+/* Common Style */
+.common-btn {
+  background-color: #fd6e0a;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 22px;
+  color: white;
+  outline: none;
+  border: none;
+}
+.outline-btn {
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 22px;
+  color: #fd6e0a;
+  border: 1px solid #fd6e0a;
+  cursor: pointer;
+}
+
+.container .logo-r {
+  font-size: 20px;
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+}
+
+.logo-r {
+  font-weight: bold;
+  font-size: 30px;
+  color: #fd6e0a;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  gap: 20px;
+  align-items: center;
+}
+
+ul li a {
+  text-decoration: none;
+}
+
+/* Hero Section Style */
+.hero-parent-root {
+  background-color: #fff8f3;
+}
+.hero-parent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-left-btn-parent {
+  margin-top: 12px;
+}
+
+.hero-left h2 {
+  font-weight: bold;
+  font-size: 35px;
+  margin-bottom: 12px;
+}
+
+.hero-left-p1 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.about-parent {
+  background-color: #fff8f3;
+  margin: 70px auto;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  padding: 100px;
+}
+
+.about-box-parent {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.about-parent p {
+  margin: 20px;
+}
+
+.about-box-parent .box {
+  background-color: rgb(195, 96, 26) 3;
+  border-radius: 5px;
+  padding: 16px;
+
+  text-align: center;
+}
+
+.what-i-do-parent {
+  padding: 20px 50px;
+  align-items: center;
+  text-align: center;
+}
+
+.what-i-do-card-container {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 10px;
+  padding: 20px;
+}
+
+.what-i-do-card-container .what-i-do-card h3 {
+  margin: 15px 0;
+}
+
+.what-i-do-card {
+  border: 1px solid orange;
+  font-size: 15px;
+  padding: 8px;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.my-amazing-parent {
+  text-align: center;
+}
+
+.gallery {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  grid-auto-rows: 200px;
+  grid-template-areas:
+    "one two three"
+    "four two six"
+    "four five six";
+}
+
+.gallery img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.box-1 {
+  grid-area: one;
+}
+.box-2 {
+  grid-area: two;
+}
+.box-3 {
+  grid-area: three;
+}
+.box-4 {
+  grid-area: four;
+}
+.box-5 {
+  grid-area: five;
+}
+.box-6 {
+  grid-area: six;
+}
+
+/* footer styles */
+/* Container Layout */
+.site-footer {
+  background-color: #fff8f3;
+  padding: 60px 20px;
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-container {
+  max-width: 1140px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px;
+  align-items: start;
+}
+
+/* Typography & Content */
+.footer-heading {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+}
+
+.footer-text {
+  font-size: 1rem;
+  color: #555555;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+/* Social Media Icons */
+.social-links {
+  display: flex;
+  gap: 15px;
+}
+
+.social-links a {
+  display: inline-block;
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.social-links a:hover {
+  transform: translateY(-3px);
+  opacity: 0.8;
+}
+
+.social-links img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+/* Form Design */
+.footer-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* Replaced broken vertical margins with clean grid-gap */
+}
+
+.form-group {
+  width: 100%;
+}
+
+.footer-form input,
+.footer-form textarea {
+  width: 100%;
+  box-sizing: border-box; /* Crucial: ensures padding doesn't cause overflow */
+  padding: 12px 16px;
+  border: 1px solid #e2e8f0; /* Soft border replaces invisible edges */
+  background-color: #ffffff;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  color: #2d3748;
+  outline: none;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+/* Professional Input Focus States */
+.footer-form input:focus,
+.footer-form textarea:focus {
+  border-color: #fd6e0a; /* Subtle brand highlight accent */
+  box-shadow: 0 0 0 3px rgba(253, 110, 10, 0.15);
+}
+
+/* Button Alignment & Finish */
+.footer-form .common-btn {
+  align-self: flex-start; /* Prevents button from awkwardly stretching 100% wide */
+  padding: 12px 28px;
+  background-color: #fd6e0a;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    transform 0.1s ease;
+}
+
+.footer-form .common-btn:hover {
+  background-color: #e05e04;
+}
+
+.footer-form .common-btn:active {
+  transform: scale(0.98);
+}
+
+/* Responsive Breakpoint (Mobile Optimization) */
+@media (max-width: 768px) {
+  .site-footer {
+    padding: 40px 16px;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr; /* Stacks columns cleanly on mobile screens */
+    gap: 40px;
+  }
+
+  .footer-form .common-btn {
+    width: 100%; /* Stretches button for easier thumb access on mobile */
+    text-align: center;
+  }
+}
